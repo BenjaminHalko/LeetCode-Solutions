@@ -1,5 +1,5 @@
-class Solution(object):
-    def removeDuplicates(self, nums):
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
         lastnum = ""
         x = 0
         for num in nums:
@@ -9,4 +9,4 @@ class Solution(object):
                 x += 1
             elif lastnum > num: break
         return x
-        
+    
