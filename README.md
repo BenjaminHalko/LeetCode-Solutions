@@ -1,3 +1,3 @@
 # Leetcode
 
-My Leetcode Solutions
+Leetcode Profile: https://leetcode.com/benjaminhalko/
