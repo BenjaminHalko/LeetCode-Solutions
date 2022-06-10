@@ -1,3 +1,1 @@
-# Leetcode
-
-Leetcode Profile: https://leetcode.com/benjaminhalko/
+# Leetcode Profile: https://leetcode.com/benjaminhalko/
