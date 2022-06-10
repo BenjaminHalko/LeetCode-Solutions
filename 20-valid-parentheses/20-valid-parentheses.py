@@ -1,5 +1,5 @@
-class Solution(object):
-    def isValid(self, s):
+class Solution:
+    def isValid(self, s: str) -> bool:
         current = []
         openbrackets = "{[("
         closebrackets = "}])"
