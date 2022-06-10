@@ -9,12 +9,10 @@ class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         if s == "": return 0
         result = 1
-        x = len(s)
-        for i in range(x):
-            if x-i < result: break
-            for j in range(i,x):
-                result = max(result,j-i)
-                if s[j] in s[i:][:j-i]: break
+        j = 0
+        for i,n in enumerate(s):
+            while n in s[j:][:i-j] and i-j != 0:
+                j += 1
+            result = max(result,i-j+1)
         return result
 # @lc code=end
-
