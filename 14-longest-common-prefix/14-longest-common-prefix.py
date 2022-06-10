@@ -1,5 +1,5 @@
-class Solution(object):
-    def longestCommonPrefix(self, strs):
+class Solution:
+    def longestCommonPrefix(self, strs: List[str]) -> str:
         strs = sorted(strs,key=len)
         out = strs.pop(0)
         for word in strs:
@@ -10,4 +10,3 @@ class Solution(object):
                     break
             if(out == ""): return out
         return out
-        
