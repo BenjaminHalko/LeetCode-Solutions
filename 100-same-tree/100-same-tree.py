@@ -14,4 +14,3 @@ class Solution(object):
         data = self.getdata(p.left, data)
         data = self.getdata(p.right, data)
         return data
-        
