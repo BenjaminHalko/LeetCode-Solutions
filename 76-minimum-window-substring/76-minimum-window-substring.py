@@ -15,7 +15,7 @@ class Solution:
                 if allfound.count(letter) < t.count(letter):
                     allfound += letter
                 
-            while start < end and (found.count(s[start]) > t.count(s[start]) or s[start] not in t):
+            while start < end and (s[start] not in t or found.count(s[start]) > t.count(s[start])):
                 if found.count(letter) <= t.count(letter):
                     allfound.replace(s[start],"",1)
                 found = found.replace(s[start],"",1)
