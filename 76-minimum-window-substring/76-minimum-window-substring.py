@@ -5,20 +5,20 @@ class Solution:
         if s == t: return t
         
         start = 0
-        found = ""
+        found = defaultdict(int)
         allfound = ""
         result = ""
         minFound = -1
         for end, letter in enumerate(s):
             if letter in t:
-                found += letter
+                found[letter] += 1
                 if allfound.count(letter) < t.count(letter):
                     allfound += letter
                 
-            while start < end and (s[start] not in t or found.count(s[start]) > t.count(s[start])):
-                if found.count(letter) <= t.count(letter):
+            while start < end and (s[start] not in t or found[s[start]] > t.count(s[start])):
+                if found[letter] >= t.count(letter):
                     allfound.replace(s[start],"",1)
-                found = found.replace(s[start],"",1)
+                if s[start] in t: found[s[start]] -= 1
                 start += 1
             
             if len(allfound) == target and (end-start <= minFound or minFound == -1):
