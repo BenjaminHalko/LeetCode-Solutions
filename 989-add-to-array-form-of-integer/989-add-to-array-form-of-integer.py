@@ -2,7 +2,7 @@ class Solution:
     def addToArrayForm(self, num: List[int], k: int) -> List[int]:
         kLen = len(str(k))
         
-        def add10(index,num):
+        def add10(index):
             while num[index] >= 10:
                 num[index] -= 10
                 if index == 0:
@@ -10,10 +10,10 @@ class Solution:
                     index += 1
                 else:
                     num[index-1] += 1
-                    add10(index-1,num)
+                    add10(index-1)
         if kLen > len(num): num = [0]*(kLen-len(num)) + num
         for i,n in enumerate(str(k)):
             num[len(num)-kLen+i] += int(n)
-            add10(len(num)-kLen+i,num)
+            add10(len(num)-kLen+i)
             
         return num
