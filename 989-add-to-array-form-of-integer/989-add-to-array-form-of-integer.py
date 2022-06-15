@@ -11,6 +11,7 @@ class Solution:
                 else:
                     num[index-1] += 1
                     add10(index-1)
+                    
         if kLen > len(num): num = [0]*(kLen-len(num)) + num
         for i,n in enumerate(str(k)):
             num[len(num)-kLen+i] += int(n)
