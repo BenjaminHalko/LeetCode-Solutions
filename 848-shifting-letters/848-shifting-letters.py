@@ -1,12 +1,10 @@
 class Solution:
     def shiftingLetters(self, s: str, shifts: List[int]) -> str:
-        xlen = len(shifts)
-        letters = [ord(x) for x in s][::-1]
-        moves = [0]*xlen
-        
+        letters = [ord(x) for x in s]
+
         result = ""
-        for i,num in enumerate(shifts[::-1]):
-            if i+1 < xlen: moves[i+1] = moves[i] + num
-            result = chr((letters[i]+moves[i] + num - 97) % 26 + 97)+result
+        for i in range(len(shifts)-1,-1,-1):
+            shifts[i-1] += shifts[i]
+            result = chr((letters[i]+shifts[i] - 97) % 26 + 97) + result
             
         return result
