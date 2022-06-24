@@ -1,7 +1,5 @@
 class Solution:
     def isPossible(self, target: List[int]) -> bool:
-        
-        targetOnes = [1]*len(target)
         while max(target) != 1:
             
             #Get Maximum
