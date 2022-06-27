@@ -1,6 +1,8 @@
-![Total Solved](https://img.shields.io/badge/dynamic/json?label=Total%20Solved&query=totalSolved&url=https%3A%2F%2Fleetcode-stats-api.herokuapp.com%2FBenjaminHalko)
-![Easy Solved](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Easy%20Solved&query=easySolved&url=https%3A%2F%2Fleetcode-stats-api.herokuapp.com%2FBenjaminHalko)
-![Medium Solved](https://img.shields.io/badge/dynamic/json?color=yellow&label=Medium%20Solved&query=mediumSolved&url=https%3A%2F%2Fleetcode-stats-api.herokuapp.com%2FBenjaminHalko)
-![Hard Solved](https://img.shields.io/badge/dynamic/json?color=red&label=Hard%20Solved&query=hardSolved&url=https%3A%2F%2Fleetcode-stats-api.herokuapp.com%2FBenjaminHalko)
 # Leetcode Profile:
-https://leetcode.com/benjaminhalko/
+[![Profile](https://badges.peiyuan.ch/leetcode/benjaminhalko/name?logo=leetcode&style=for-the-badge&color=blueviolet)](https://leetcode.com/benjaminhalko/)
+
+## Total Solved Problems
+[![Total Solved](https://badges.peiyuan.ch/leetcode/benjaminhalko/solved)](https://leetcode.com/benjaminhalko/)
+[![Easy Solved](https://badges.peiyuan.ch/leetcode/benjaminhalko/solved?difficulty=easy)](https://leetcode.com/benjaminhalko/)
+[![Medium Solved](https://badges.peiyuan.ch/leetcode/benjaminhalko/solved?difficulty=medium)](https://leetcode.com/benjaminhalko/)
+[![Hard Solved](https://badges.peiyuan.ch/leetcode/benjaminhalko/solved?difficulty=hard)](https://leetcode.com/benjaminhalko/)
