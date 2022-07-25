@@ -10,7 +10,6 @@ class Solution:
                 start = i+1
             else:
                 nums[letter] -= 1
-                print(max(nums.values()))
                 if nums[letter] == 0 and max(nums.values()) == 0: return True
                 while nums[letter] < 0:
                     if s2[start] in nums: nums[s2[start]] = min(nums[s2[start]]+1,numsOriginal[s2[start]])
