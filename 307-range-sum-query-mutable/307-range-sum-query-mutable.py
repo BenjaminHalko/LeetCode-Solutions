@@ -4,4 +4,4 @@ class NumArray:
     def update(self, index: int, val: int) -> None:
         self.nums[index], self.s = val, self.s + val - self.nums[index]
     def sumRange(self, left: int, right: int) -> int:
-        return self.s - sum(self.nums[:left]) - sum(self.nums[right+1:])
+        return self.s - sum(self.nums[:left]) - sum(self.nums[right+1:]) if right - left > self.l // 2 else sum(self.nums[left:right+1:1])
